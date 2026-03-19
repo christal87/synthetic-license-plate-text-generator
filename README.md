@@ -12,12 +12,12 @@ Output images are sized 192x64 pixels containing ABCD-123, ABC-123 formatted tex
 
 YOLO compatible bounding box classes and coordinates are added beforehand taken by PIL ImageFont's built-in getbbox() method and recomputed after augmentations when needed. There's an additional simple opencv based viewer/browser for taking visual inspections before training.  
 
-The dataset is getting split 90%-10% into training and validation sets.  
+The dataset gets split 90%-10% into training and validation sets.  
 
 This is how synthetic images look:  
 ![Generator examples](/examples/synth_plates.png "Generator examples")
 
-Training metrics for 26n model after 35 iterations (patience 7) on 80800 generated images and YOLO built-in augmentations disabled:  
+Training metrics for 26n model after 35 iterations (patience 7) on 80800 generated images and YOLO built-in augmentations disabled(classification loss seems to become quickly overfit vs box loss):  
 ![Training metrics](/examples/metrics_35it.png "Training metrics")
 
 Some inferece results:  
