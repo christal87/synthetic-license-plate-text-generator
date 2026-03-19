@@ -20,5 +20,5 @@ This is how synthetic images look:
 Training metrics for 26n model after 35 iterations (patience 7) on 80800 generated images and YOLO built-in augmentations disabled(classification loss seems to become quickly overfit vs box loss):  
 ![Training metrics](/examples/metrics_35it.png "Training metrics")
 
-Some inferece results:  
+Some inferece results(since there are no coat-of-arms and sticker augmentations it's way less perfect than a state-of-the art OCR):  
 ![Inference examples](/examples/real_plates.png "Inference examples")
